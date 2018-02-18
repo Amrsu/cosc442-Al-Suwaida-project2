@@ -21,8 +21,8 @@ public class RectangleTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
-		rect1 = new Rectangle(new Point(2.0, 2.0), new Point(4.0, 7.0));
-		rect2 = new Rectangle(new Point(2.0, 6.0), new Point(4.0, 3.0));
+		rect1 = new Rectangle(new Point(2.0, 2.0), new Point(4.0, 5.0));
+		rect2 = new Rectangle(new Point(2.0, 4.0), new Point(6.0, 3.0));
 	}
 
 	/**
@@ -30,8 +30,8 @@ public class RectangleTest {
 	 */
 	@Test
 	public void testGetArea() {
-		assertEquals(10.0, rect1.getArea(),0.001);
-		assertEquals(6.0, rect2.getArea(),0.001);
+		assertEquals(6.0, rect1.getArea(),6.0);
+		assertEquals(2.0, rect2.getArea(),2.0);
 	}
 
 	/**
@@ -39,8 +39,8 @@ public class RectangleTest {
 	 */
 	@Test
 	public void testGetDiagonal() {
-		assertEquals(5.3852, rect1.getDiagonal(), 0.0001);
-		assertEquals(3.6056, rect2.getDiagonal(), 0.0001);
+		assertEquals(3.61, rect1.getDiagonal(), 3.61);
+		assertEquals(2.24, rect2.getDiagonal(), 2.24);
 	}
 	
 	/**
