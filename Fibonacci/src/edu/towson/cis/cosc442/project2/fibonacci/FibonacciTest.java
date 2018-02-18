@@ -39,5 +39,6 @@ public class FibonacciTest {
 		assertEquals("5", 5, fibonacci.fibonacci(5));
 		assertEquals("6", 8, fibonacci.fibonacci(6));
 		assertEquals("7", 13, fibonacci.fibonacci(7));
+		
 	}
 }
